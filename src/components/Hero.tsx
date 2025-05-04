@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Github as GitHub, Linkedin, Mail, PhoneCall } from 'lucide-react';
+import { Github as GitHub, Linkedin, Mail, PhoneCall, Download } from 'lucide-react';
 import { Typewriter } from 'react-simple-typewriter';
 
 const Hero = () => {
@@ -54,7 +54,17 @@ const Hero = () => {
               </div>
 
               <div className="flex space-x-4 mt-8 animate-float">
-                {/* Add your icons and links here */}
+                {/* Download Resume Button */}
+                <a
+                  href="https://drive.google.com/uc?export=download&id=1ON32CNMcExIxxgQ8bUfH5WBgpri0vSIC"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-2 px-6 py-2 bg-blue-600 text-white rounded-full font-medium hover:bg-blue-700 transition duration-300"
+                >
+                  <Download size={18} />
+                  <span>Download Resume</span>
+                </a>
               </div>
             </div>
           </div>
@@ -64,7 +74,7 @@ const Hero = () => {
             <div className={`transition-all duration-1000 ease-out delay-300 transform ${isVisible ? 'translate-y-0 opacity-100 animate-fadeInRight' : 'translate-y-10 opacity-0'}`}>
               <div className="relative w-64 h-64 md:w-80 md:h-80 border-8 border-white rounded-full overflow-hidden shadow-xl animate-morphing">
                 <img
-                  src="src/photo.jpg"
+                  src="/photo.jpg"
                   alt="Kesava Prabha"
                   className="w-full h-full object-cover"
                 />
